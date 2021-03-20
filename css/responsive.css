@@ -1,0 +1,236 @@
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .menu li a {
+        margin-left: 0;
+        padding: 6px 16px;
+    }
+    .single-address {
+        font-size: 14px;
+    }
+    h2.home-title {
+        font-size: 33px;
+    }
+    .bakers-right-arrow {
+        right: 44.5%;
+    }
+    .bakers-left-arrow {
+        left: 44.5%
+    }
+    .reasion-select {
+        background-position: 429px center;
+    }
+    .language-options {
+  background: rgba(0, 0, 0, 0) url("../img/lan.png") no-repeat scroll 100% 61%;
+  
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /*menu area*/
+    .menu li a {
+        font-size: 12px;
+        margin-left: 2px;
+        padding: 6px 8px;
+    }
+    .displaynone {
+        display: none;
+    }
+    .language-options {
+  background: rgba(0, 0, 0, 0) url("../img/lan.png") no-repeat scroll 39% 61%;
+  position: relative;
+}
+    .language-select {
+        text-align: left;
+    }
+    .reasion-select {
+        background-position: 319px center;
+    }
+    h2.home-title {
+        font-size: 22px;
+    }
+    .single-bakery {
+        padding: 50px 20px 20px;
+    }
+    .single-bakery h2 {
+        padding: 15px 0;
+        font-size: 25px;
+    }
+    .single-baked h2 {
+        font-size: 25px;
+        padding: 10px 0;
+    }
+    h2.item-title {
+        font-size: 20px;
+    }
+    .bakers-left-arrow {
+        left: 42.5%;
+    }
+    .bakers-right-arrow {
+        right: 42.5%;
+    }
+    h2.long-title {
+        font-size: 34px;
+    }
+    .about-content {
+        font-size: 11px;
+    }
+    .descout-content > p {
+        font-size: 18px;
+    }
+    .single-hover-item h2.home-title {
+        line-height: 101px;
+    }
+    .blanksection {
+        height: 30px;
+    }
+    h2.section-title {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .home-subsection {
+        position: relative;
+    }
+    .displaynone {
+        display: none;
+    }
+    .language-select {
+        display: none;
+    }
+    .social-icon {
+        text-align: center;
+    }
+    .home-area {
+        height: auto !important;
+    }
+    .subsection-item {
+        padding: 30px;
+        text-align: center;
+    }
+    .subsection-item h2 {
+        font-size: 25px;
+    }
+    .navbar-toggle span {
+        background: pink none repeat scroll 0 0;
+    }
+    nav.navbar-area {
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 555;
+    }
+    .home-image-slider .slick-prev {
+        top: 50% !important;
+    }
+    .home-image-slider .slick-next {
+        top: 50% !important;
+    }
+    .color-picker li.spinner-icon {
+        right: -58px;
+    }
+    .color-picker li.spinner-icon {
+        height: 40px !important;
+        line-height: 40px;
+        right: -56px;
+        width: 40px !important;
+    }
+    .section-padding {
+        padding-bottom: 70px;
+        padding-top: 70px;
+    }
+    .bakery-section .section-padding {
+        padding-bottom: 20px;
+    }
+    .single-baked img {
+        width: 100%;
+    }
+    h2.long-title {
+        font-size: 30px;
+    }
+    .about-content {
+        font-size: 13px;
+    }
+    .descout-content > p {
+        font-size: 15px;
+    }
+    .descount-button {
+        text-align: center;
+    }
+    .address-list li {
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+    .send-button {
+        width: 110px;
+    }
+    .single-hover-item h2.home-title {
+        font-size: 50px;
+        line-height: 150px;
+    }
+    .popular-item-slider .slick-dots li button {
+        width: 20px;
+    }
+    .social-link {
+        text-align: center;
+    }
+    .copyrght {
+        text-align: center;
+    }
+    .section-title-div {
+        padding-bottom: 60px;
+    }
+    .bakers-img img {
+        width: 100%;
+    }
+    .bakers-left-arrow {
+        left: 32.5%
+    }
+    .bakers-right-arrow {
+        right: 32.5%
+    }
+    .margin-top {
+        margin-top: 50px;
+    }
+    .descount-button a {
+        font-size: 14px;
+        padding: 10px 28px;
+    }
+    .descout-content {
+        text-align: center;
+    }
+    .baked-slider .slick-dots li button {
+        height: 6px;
+        width: 30px;
+    }
+    .menu li {
+        margin: 0 60px;
+    }
+    .menu {
+        text-align: center;
+        background: #fff;
+        position: relative;
+        z-index: 55;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .bakers-right-arrow {
+        right: 39%;
+    }
+    .bakers-left-arrow {
+        left: 39%;
+    }
+    .single-baked {
+        padding: 0px 50px;
+    }
+    .menu li {
+        margin: 0 120px;
+    }
+    .menu {
+        text-align: center;
+    }
+}

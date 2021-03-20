@@ -1,0 +1,94 @@
+body {
+    background-image: url(../patterns/pattern4.png);
+}
+.top-bar {
+    background: #89c06f none repeat scroll 0 0;
+}
+.is-sticky .navbar-area {
+  box-shadow: 0 3px 5px #89c06f;
+}
+.single-address span {
+    color: #e2f8d7;
+}
+.language-options::before {
+  color: #e2f8d7;
+}
+.social-icon a {
+  color: #89c06f;
+}
+.menu li a:hover, .menu li.active a {
+  border-color: #89c06f;
+  color: #89c06f;
+}
+.home-image-slider .slick-arrow:hover {
+  background: #89c06f none repeat scroll 0 0;
+}
+.subsection-item:hover {
+    color: #fc7790;
+    background: rgba(0, 0, 0, .5);
+}
+.section-title {
+  color: #89c06f;
+}
+.bakery-img {
+  background: #89c06f none repeat scroll 0 0;
+}
+.single-bakery {
+  border: 1px solid #e7f2e2;
+  background: rgba(226, 248, 215, 0.35) none repeat scroll 0 0;
+}
+.single-bakery h2 {
+  color: #89c06f;
+}
+.single-baked p {
+  background: #89c06f none repeat scroll 0 0;
+}
+.baked-slider li.slick-active button {
+  background: #e2f8d7 none repeat scroll 0 0;
+}
+.long-title span {
+  color: #89c06f;
+}
+.descout-content > p {
+  background: rgba(137, 192, 111, 0.6) none repeat scroll 0 0;
+}
+.descount-button a {
+  background: #89c06f none repeat scroll 0 0;
+}
+.testimonial-single {
+  background: rgba(226, 248, 215, 0.35) none repeat scroll 0 0;
+  border: 2px solid #e7f2e2;
+}
+.panel-item {
+  background: rgba(226, 248, 215, 0.35) none repeat scroll 0 0;
+}
+.testimonial-slider .slick-dots li button {
+  border: 2px solid #89c06f;
+}
+.single-baker-item p {
+  background: #89c06f none repeat scroll 0 0;
+}
+.address-list span {
+  color: #89c06f;
+}
+.send-button {
+  background: #89c06f none repeat scroll 0 0;
+}
+.send-button span {
+  color: #e2f8d7;
+}
+.popular-item {
+  background: #89c06f none repeat scroll 0 0;
+}
+.single-item::before {
+  border-color: currentcolor #e2f8d7 #e2f8d7 currentcolor;
+}
+.popular-item-slider .slick-dots li button {
+  border: 1px solid #e2f8d7;
+}
+.footer-section p a {
+  color: #89c06f;
+}
+.footer-section p span {
+  color: #89c06f;
+}

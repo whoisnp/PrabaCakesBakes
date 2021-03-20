@@ -1,0 +1,94 @@
+body {
+    background-image: url(../patterns/pattern6.png);
+}
+.top-bar {
+    background: #f9bc5c none repeat scroll 0 0;
+}
+.is-sticky .navbar-area {
+  box-shadow: 0 3px 5px #f9bc5c;
+}
+.single-address span {
+    color: #fde0b2;
+}
+.language-options::before {
+  color: #fde0b2;
+}
+.social-icon a {
+  color: #f9bc5c;
+}
+.menu li a:hover, .menu li.active a {
+  border-color: #f9bc5c;
+  color: #f9bc5c;
+}
+.home-image-slider .slick-arrow:hover {
+  background: #f9bc5c none repeat scroll 0 0;
+}
+.subsection-item:hover {
+    color: #f9bc5c;
+    background: rgba(0, 0, 0, .5);
+}
+.section-title {
+  color: #f9bc5c;
+}
+.bakery-img {
+  background: #f9bc5c none repeat scroll 0 0;
+}
+.single-bakery {
+  border: 1px solid #fef4e4;
+  background: rgba(255, 241, 220, 0.35) none repeat scroll 0 0;
+}
+.single-bakery h2 {
+  color: #f9bc5c;
+}
+.single-baked p {
+  background: #f9bc5c none repeat scroll 0 0;
+}
+.baked-slider li.slick-active button {
+  background: #fde0b2 none repeat scroll 0 0;
+}
+.long-title span {
+  color: #f9bc5c;
+}
+.descout-content > p {
+  background: rgba(249, 188, 92, 0.6) none repeat scroll 0 0;
+}
+.descount-button a {
+  background: #f9bc5c none repeat scroll 0 0;
+}
+.testimonial-single {
+  background: rgba(255, 241, 220, 0.35) none repeat scroll 0 0;
+  border: 2px solid #fef4e4;
+}
+.panel-item {
+  background: rgba(255, 241, 220, 0.35) none repeat scroll 0 0;
+}
+.testimonial-slider .slick-dots li button {
+  border: 2px solid #f9bc5c;
+}
+.single-baker-item p {
+  background: #f9bc5c none repeat scroll 0 0;
+}
+.address-list span {
+  color: #f9bc5c;
+}
+.send-button {
+  background: #f9bc5c none repeat scroll 0 0;
+}
+.send-button span {
+  color: #fde0b2;
+}
+.popular-item {
+  background: #f9bc5c none repeat scroll 0 0;
+}
+.single-item::before {
+  border-color: currentcolor #fde0b2 #fde0b2 currentcolor;
+}
+.popular-item-slider .slick-dots li button {
+  border: 1px solid #fde0b2;
+}
+.footer-section p a {
+  color: #f9bc5c;
+}
+.footer-section p span {
+  color: #f9bc5c;
+}

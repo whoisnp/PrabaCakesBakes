@@ -1,0 +1,841 @@
+/*
+Theme Name: Croissant - Creative Bakery and Pastry Business One Page HTML5 Template
+Theme URI: http://envalab.com/html/croissant
+Author: THE ENVALAB TEAM
+Author URI: http://envalab.com/
+Description: Croissant - Creative Bakery and Pastry Business One Page HTML5 Template is a Creative, Unique, Rich and Modern template especially designed for Pastries, Bakeries and all type of Patisserie Businesses. It's a One Page HTML5 Template, that contains everything any type of Patisserie business needs. Keep your every single detail is simple way in one page and efficient for your readers.
+Version: 1.0
+*/
+
+/**
+ *** Table of Content ***
+ * Top-bar Area
+ * Menu Area
+ * Home Area
+ * Home Sub Section
+ * Bakery Area
+ * Baked Area
+ * About Us Area
+ * Discount Section
+ * Testimonial Section
+ * Our Bakers Area
+ * Contact Us Area
+ * Popular Goods Area
+ * Footer Area
+ * Return Top CSS
+ * Pre Loader Style
+ **/
+
+
+/**
+font-family: 'Roboto', sans-serif;
+font-family: 'Rancho', cursive;
+font-family: 'Mrs Saint Delafield', cursive;
+*/
+
+
+/* Top-bar Area */
+.top-bar {
+    background: #fc7790 none repeat scroll 0 0;
+    color: #fff;
+    padding: 10px 0;
+}
+.social-icon a {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+    color: #fc7790;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.top-address {
+    line-height: 30px;
+}
+.single-address span {
+    padding-right: 5px;
+    color: #feb1bf;
+}
+.language-options select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    width: 160px;
+    text-align: left;
+    padding-left: 10px;
+}
+.language-options {
+    background: rgba(0, 0, 0, 0) url("img/lan.png") no-repeat scroll 93% 61%;
+    position: relative;
+}
+.language-options::before {
+    content: "";
+    font-family: fontawesome;
+    left: 0;
+    position: absolute;
+    top: 0;
+    color: #feb1bf;
+}
+.social-icon a:hover {
+    background: #494949 none repeat scroll 0 0;
+}
+/* END of Top-bar Area */
+
+
+/* Menu Area */
+.navbar-area {
+    padding: 20px 0;
+    background: #fff;
+    z-index: 45;
+}
+.is-sticky .navbar-area {
+    box-shadow: 0 3px 5px pink;
+    background: #fff none repeat scroll 0 0;
+    z-index: 555;
+}
+.navbar-brand {
+    padding: 0;
+}
+.menu {
+    padding-top: 9px;
+}
+.menu li a {
+    border: 2px solid transparent;
+    border-radius: 50px;
+    color: #494949;
+    margin-left: 5px;
+    padding: 6px 25px;
+    transition: .3s;
+}
+.menu li a:hover,
+.menu li.active a {
+    border-color: #fc7790;
+    color: #fc7790;
+}
+.menu li a span {
+    padding-right: 5px;
+}
+/* END of Menu Area*/
+
+/* Home Area */
+.home-area {
+    position: relative;
+}
+.home-single-slider img {
+    width: 100%;
+}
+.home-image-slider .slick-prev {
+    background: transparent none repeat scroll 0 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    height: 50px;
+    left: 2%;
+    margin-top: -25px;
+    position: absolute;
+    width: 50px;
+    z-index: 2;
+    transition: .3s;
+}
+.home-image-slider .slick-next {
+    background: transparent none repeat scroll 0 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    height: 50px;
+    right: 2%;
+    margin-top: -25px;
+    position: absolute;
+    width: 50px;
+    z-index: 2;
+    transition: .3s;
+}
+.home-image-slider .slick-arrow:hover {
+    background: #fc7790;
+    border: 0
+}
+#homearea {
+    height: 100%;
+    /*z-index: -9;*/
+}
+.big-background-default-image {
+    background-image: url(img/sunset.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    width:100%;
+    height:100%;
+    z-index:0;
+    backface-visibility:hidden
+}
+/* END of Home Area */
+
+/* Home Sub Section */
+.home-subsection {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+.subsection-item {
+    color: #ffffff;
+    padding: 40px;
+    transition: .4s;
+}
+.subsection-item h2 {
+    color: #fff;
+}
+.subsection-item:hover {
+    color: #fc7790;
+    background: rgba(0, 0, 0, .5);
+}
+/* END of Home Sub Section */
+
+/* Bakery Area */
+.bakery-section {
+    padding-bottom: 0;
+}
+.section-title-div {
+    padding-bottom: 100px;
+}
+.section-title {
+    color: #fc7790;
+    position: relative;
+    padding-bottom: 10px;
+}
+.section-title::before {
+    bottom: 0;
+    content: "";
+    left: 50%;
+    position: absolute;
+    background: url(img/line.png) no-repeat;
+    width: 82px;
+    height: 6px;
+    margin-left: -41px;
+}
+.single-bakery {
+    background: rgba(255, 230, 234, 0.35) none repeat scroll 0 0;
+    border: 1px solid #fee4e9;
+    border-radius: 20px;
+    padding: 50px 40px 30px;
+    position: relative;
+    margin-bottom: 100px;
+}
+.bakery-content {
+    position: relative;
+    z-index: 2;
+    height: 140px;
+}
+.single-bakery h2 {
+    color: #fc7790;
+    padding: 25px 0;
+    text-transform: capitalize;
+    transition: .4s;
+}
+.bakery-img {
+    background: #fc7790 none repeat scroll 0 0;
+    border-radius: 20px;
+    display: inline-block;
+    height: 80px;
+    left: 50%;
+    line-height: 80px;
+    margin-left: -40px;
+    position: absolute;
+    top: -40px;
+    width: 80px;
+    transition: .4s;
+}
+.single-bakery::before {
+    border: 1px solid #f3f3f3;
+    border-radius: 20px;
+    content: "";
+    height: 100%;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    z-index: 0;
+}
+.single-bakery:hover .item-title {
+    color: #be9eda;
+}
+.single-bakery:hover {
+    border-color: #eee3ff;
+}
+.single-bakery:hover .bakery-img {
+    background: #be9eda;
+}
+/* END of Bakery Area */
+
+/* Baked Area */
+.single-baked h2 {
+    color: #494949;
+    padding: 20px 0;
+    background: #fff;
+}
+.single-baked {
+    margin-bottom: 50px;
+}
+.single-baked img {
+    border-radius: 15px 15px 0 0;
+}
+.single-baked p {
+    background: #fc7790 none repeat scroll 0 0;
+    color: #fff;
+    padding: 5px 20px;
+    overflow: hidden;
+    border-radius: 0px 0px 15px 15px;
+}
+.single-baked p span.fa {
+    float: left;
+    line-height: 20px;
+}
+.single-baked p span.baked-price {
+    float: right;
+}
+.baked-slider .slick-dots {
+    text-align: center;
+}
+.baked-slider .slick-dots li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.baked-slider .slick-dots li button {
+    background: transparent;
+    font-size: 0;
+    height: 10px;
+    width: 50px;
+    border: 2px solid #d7d7d7;
+    border-radius: 50px;
+}
+.baked-slider li.slick-active button {
+    background: #be9eda;
+    border: 0;
+}
+/* END of Baked Area */
+
+/* About Us Area */
+.long-title {
+    margin-bottom: 35px;
+}
+
+.long-title span {
+    color: #fc7790;
+}
+
+.sign {
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 45px;
+    margin-top: 30px;
+}
+/* END of About Us Area */
+
+/* Discount Section */
+.discount-sectoin {
+    padding: 70px 0;
+    background-image: url(img/descount.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.discount-sectoin::before {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.descout-content > p {
+    background: rgba(252, 119, 144, 0.6) none repeat scroll 0 0;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 24px;
+    padding: 5px 20px;
+}
+.descout-content h2 {
+    font-size: 80px;
+}
+.descount-button a {
+    background: #fc7790 none repeat scroll 0 0;
+    border-radius: 50px;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 15px 40px;
+}
+.descount-button a span {
+    padding-right: 5px;
+}
+/* END of Discount Section */
+
+/* Testimonial Section */
+.testimonial-single {
+    background: #fff6f8 none repeat scroll 0 0;
+    border: 2px solid #fee4e9;
+    border-radius: 20px;
+    padding: 35px 20px;
+    position: relative;
+}
+.client-name span {
+    font-weight: 700;
+}
+.client-img {
+    bottom: -60px;
+    position: absolute;
+    right: 9%;
+}
+.client-img img {
+    width: 100px;
+    border-radius: 50%;
+}
+.client-name {
+    padding-top: 30px;
+}
+.testimonial-single::before {
+    border: 2px solid #f3f3f3;
+    border-radius: 15px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 13px;
+    width: 100%;
+    left: 0;
+}
+.testimonial-content {
+    position: relative;
+    z-index: 5;
+}
+.testimonial-slider .slick-list {
+    padding: 0 0 60px;
+}
+.testimonial-title h2 {
+    border-bottom: 1px solid #eeeeee;
+    color: #494949;
+}
+.testimonial-title h2::before {
+    display: none;
+}
+.testimonial-title {
+    margin-bottom: 30px;
+}
+
+.panel-heading::before {
+    content: "";
+    font-family: fontawesome;
+    position: absolute;
+    right: 5%;
+    top: 10px;
+    height: 17px;
+    width: 17px;
+    background: url(img/plus.png);
+}
+.panel-heading {
+    position: relative;
+    padding: 0;
+}
+h4.panel-title {
+    color: #494949;
+    font-family: roboto;
+}
+.panel-title a {
+    display: block;
+    padding: 10px;
+}
+.panel-heading.active::before {
+    content: "";
+    background: url(img/minus.png);
+}
+.panel-item {
+    background: #fff6f8 none repeat scroll 0 0;
+    border-radius: 15px;
+}
+.panel-body {
+    border-top: 0 !important;
+}
+.panel-heading.active a {
+    color: #494949;
+    font-weight: 700;
+}
+.testimonial-slider .slick-dots li button {
+    background: transparent none repeat scroll 0 0;
+    border: 2px solid #fc859c;
+    border-radius: 50%;
+    font-size: 0;
+    height: 13px;
+    width: 13px;
+}
+.testimonial-slider .slick-dots li {
+    display: inline-block;
+    margin-right: 5px;
+}
+.testimonial-slider .slick-dots {
+    bottom: 13px;
+    position: absolute;
+    width: 200px;
+}
+.testimonial-slider .slick-dots li.slick-active button {
+    border-color: #c5a8de;
+}
+/* END of Testimonial Section */
+
+/* Our Bakers Area */
+.ourbakers-section .section-title {
+    color: #494949;
+}
+.bakers-img {
+    position: relative;
+}
+.bakers-img .social-link {
+    height: 100px;
+    left: 0;
+    line-height: 100px;
+    margin-top: -50px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    transform: scale(0);
+    transition: .3s;
+}
+.social-link a {
+    background: #494949 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 50px;
+}
+.single-baker-item h2.item-title {
+    padding: 15px 0;
+    background: #fff;
+}
+.single-baker-item p {
+    background: #fc7790 none repeat scroll 0 0;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    padding: 5px;
+}
+.social-link a:hover {
+    color: #be9ecd;
+}
+.bakers-img::before {
+    background: rgba(190, 158, 218, 0) none repeat scroll 0 0;
+    border-radius: 10px 10px 0 0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transform: translate(86px);
+    transition: .3s;
+    left: 0;
+    top: 0;
+}
+.single-baker-item {
+    transition: .3s;
+    overflow: hidden;
+}
+.single-baker-item:hover .bakers-img::before {
+    background: rgba(190, 158, 218, .9) none repeat scroll 0 0;
+    transform: translate(0px)
+}
+.single-baker-item:hover .social-link {
+    transform: scale(1);
+}
+.bakers-left-arrow {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+    bottom: 0;
+    color: #e2e2e2;
+    height: 50px;
+    left: 45%;
+    position: absolute;
+    width: 50px;
+    transition: .4s;
+}
+.bakers-right-arrow {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+    bottom: 0;
+    color: #e2e2e2;
+    height: 50px;
+    position: absolute;
+    right: 45%;
+    width: 50px;
+    transition: .4s;
+}
+.bakers-slider {
+    padding-bottom: 90px;
+}
+.bakers-right-arrow:hover,
+.bakers-left-arrow:hover {
+    color: #be9eda;
+    border-color: #be9eda;
+}
+/* END of Our Bakers Area */
+
+/* Contact Us Area */
+.google-map {
+    height: 150px;
+    width: 100%;
+    border-radius: 20px;
+}
+.address-list {
+    color: #494949;
+    font-size: 15px;
+    margin-top: 35px;
+}
+.address-list span {
+    color: #fc7790;
+    width: 30px;
+    text-align: left;
+    display: inline-block;
+}
+.address-list li {
+    padding-bottom: 20px;
+}
+.address-list li.mb0 {
+    padding-bottom: 5px;
+}
+.contact-form {
+    overflow: hidden;
+}
+.contact-form .success,
+.contact-form .error {
+    display: none;
+}
+.contact-form .success  {
+    color: green;
+}
+.contact-form .error  {
+    color: red;
+}
+.contact-form input {
+    width: 100%;
+    background: #f7f7f7;
+    border: 2px solid #eaeaea;
+    height: 45px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    color: #a9a9a9;
+}
+.contact-form select {
+    width: 100%;
+    height: 45px;
+    border-radius: 15px;
+    border: 2px solid #eaeaea;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 20px;
+    color: #a9a9a9;
+    background: transparent;
+}
+.contact-form textarea {
+    height: 120px;
+    width: 100%;
+    background: #f7f7f7;
+    border: 2px solid #eaeaea;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    color: #a9a9a9;
+}
+.send-button {
+    background: #fc7790 none repeat scroll 0 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 18px;
+    height: 45px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    width: 170px;
+}
+.send-button span {
+    color: #feb1bf;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.reasion-select {
+    background-color: #f7f7f7;
+    background-image: url("img/caret.png");
+    background-position: 96% center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 15px;
+}
+.contact-bottom-section {
+    bottom: -110px;
+    position: relative;
+    z-index: -1;
+}
+/* END of Contact Us Area */
+
+/* Popular Goods Area */
+.popular-item .section-title-div h2 {
+    color: #fff;
+}
+.popular-item {
+    background: #fc7790;
+}
+.single-item img {}
+.single-item {
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+.single-item::before {
+    border: 2px solid #ff9daf;
+    border-radius: 15px;
+    content: "";
+    height: 100%;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    border-top: 0;
+    border-left: 0;
+}
+.single-hover-item {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+    border-radius: 15px;
+    transform: scale(0);
+    transition: .4s;
+}
+.single-item:hover .single-hover-item {
+    transform: scale(1);
+}
+.single-hover-item h2.home-title {
+    color: #fff;
+    line-height: 160px;
+}
+.popular-item-slider .slick-list {
+    padding-bottom: 20px;
+}
+.popular-item-slider .slick-dots {
+    text-align: center;
+}
+.popular-item-slider .slick-dots li {
+    display: inline-block;
+    margin-right: 5px;
+}
+.popular-item-slider .slick-dots li button {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ff9daf;
+    font-size: 0;
+    height: 6px;
+    width: 50px;
+    border-radius: 50px;
+}
+.popular-item-slider .slick-dots li.slick-active button {
+    background: #fff;
+    border: 0;
+}
+/*END of Popular Goods Area */
+
+/* Footer Area */
+.footer-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-section p span {
+    color: #fc7790;
+}
+.footer-section p a {
+    color: #fc7790;
+}
+footer.footer-section p {
+    line-height: 30px;
+}
+footer .social-link a:hover {
+    background: #be9ecd none repeat scroll 0 0;
+    color: #494949;
+}
+.whitecolor {
+    background-color: #fff !important;
+}
+.lightcolor {
+    background: #f7f7f7 !important;
+}
+.blanksection {
+    background: #fff none repeat scroll 0 0;
+    height: 50px;
+    margin-bottom: -110px;
+    position: relative;
+}
+/* END of Footer Area */
+
+/* Return Top CSS */
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    font-size: 30px;
+    left: 15px;
+    margin: 0;
+    position: relative;
+    top: 8px;
+    transition: all 0.3s ease 0s;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+/*END of Return Top CSS */
+
+/* Pre Loader Style */
+.js div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 988899;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url('img/loader.gif') no-repeat center center;
+}
