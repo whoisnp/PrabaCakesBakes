@@ -1026,21 +1026,10 @@ video {
     box-sizing: border-box;
 }
 
-
-/* video {
-  width: 100%;
-}
-video source {
-  width: 100%;
-  height: auto;
-} */
-
 @media only screen and (max-width:724px) {
     video {
-        /* object-fit: cover; */
         width: 100%;
         height: 439px;
-        /* box-sizing: border-box; */
     }
     #poularimg {
         width: 100%;
