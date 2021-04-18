@@ -459,6 +459,25 @@ font-family: 'Mrs Saint Delafield', cursive;
 /* END of Discount Section */
 
 
+/* wall section */
+
+.wall-of-cake-section {
+    background-image: url(img/b.jpg);
+}
+
+.wall-single {
+    background: #fff6f8 none repeat scroll 0 0;
+    border: 2px solid #fee4e9;
+    border-radius: 20px;
+    padding: 35px 20px;
+    position: relative;
+    opacity: 0.8;
+}
+
+
+/* wall sction end */
+
+
 /* Testimonial Section */
 
 .testimonial-single {

@@ -21,9 +21,11 @@
         background-position: 429px center;
     }
     .language-options {
-  background: rgba(0, 0, 0, 0) url("../img/lan.png") no-repeat scroll 100% 61%;
-  
-}
+        background: rgba(0, 0, 0, 0) url("../img/lan.png") no-repeat scroll 100% 61%;
+    }
+    #wall_mob {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -37,9 +39,9 @@
         display: none;
     }
     .language-options {
-  background: rgba(0, 0, 0, 0) url("../img/lan.png") no-repeat scroll 39% 61%;
-  position: relative;
-}
+        background: rgba(0, 0, 0, 0) url("../img/lan.png") no-repeat scroll 39% 61%;
+        position: relative;
+    }
     .language-select {
         text-align: left;
     }
@@ -75,7 +77,7 @@
     .about-content {
         font-size: 11px;
     }
-    .descout-content > p {
+    .descout-content>p {
         font-size: 18px;
     }
     .single-hover-item h2.home-title {
@@ -86,6 +88,9 @@
     }
     h2.section-title {
         font-size: 40px;
+    }
+    #wall_mob {
+        display: none;
     }
 }
 
@@ -152,7 +157,7 @@
     .about-content {
         font-size: 13px;
     }
-    .descout-content > p {
+    .descout-content>p {
         font-size: 15px;
     }
     .descount-button {
@@ -214,6 +219,12 @@
         z-index: 55;
         margin-top: 0;
         margin-bottom: 20px;
+    }
+    #wall {
+        display: none;
+    }
+    #wall_mob {
+        display: block;
     }
 }
 
