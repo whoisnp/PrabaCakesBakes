@@ -1,14 +1,14 @@
 body {
-    background-image: url(../patterns/pattern6.png);
+  background-image: url(../patterns/pattern2.png);
 }
 .top-bar {
-    background: #f9bc5c none repeat scroll 0 0;
+  background: #f9bc5c none repeat scroll 0 0;
 }
 .is-sticky .navbar-area {
   box-shadow: 0 3px 5px #f9bc5c;
 }
 .single-address span {
-    color: #fde0b2;
+  color: #fde0b2;
 }
 .language-options::before {
   color: #fde0b2;
@@ -16,7 +16,8 @@ body {
 .social-icon a {
   color: #f9bc5c;
 }
-.menu li a:hover, .menu li.active a {
+.menu li a:hover,
+.menu li.active a {
   border-color: #f9bc5c;
   color: #f9bc5c;
 }
@@ -24,8 +25,8 @@ body {
   background: #f9bc5c none repeat scroll 0 0;
 }
 .subsection-item:hover {
-    color: #f9bc5c;
-    background: rgba(0, 0, 0, .5);
+  color: #f9bc5c;
+  background: rgba(0, 0, 0, 0.5);
 }
 .section-title {
   color: #f9bc5c;
