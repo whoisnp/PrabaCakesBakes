@@ -869,10 +869,11 @@
                             <input type="email" id="email_address" name="email_address" placeholder="Your Email" required="required" />
                             <input type="text" id="phone_number" name="phone_number" placeholder="Your Phone" />
                             <div class="reasion-select">
-                                <select name="contact_reason">
-                    <option value="Reason of Contact">Reason of Contact</option>
-                    <option value="Reason of Contact">Enquire about a cake</option>
-                    <option value="Reason of Contact">Enquire about expected deliveery</option>
+                                <select id="contact_reason">
+                    <option value="default">Reason of Contact</option>
+                    <option value="Enquire about a cake">Enquire about a cake</option>
+                    <option value="Enquire about expected delivery">Enquire about expected delivery</option>
+                    <option value="others">Others...</option>
                   </select>
                             </div>
                             <textarea id="message" name="message" placeholder="Message Here ..."></textarea>
@@ -1080,6 +1081,42 @@
     <script src="js/wow.min.js"></script>
     <!-- Main Active JS -->
     <script src="js/active.js"></script>
+    <script>
+
+      // $("#submit").on('click', function(e) {alert("hello world")})      
+      $("#submit").on('click', function(e) {
+        e.preventDefault();
+        alert("hello wolrd")
+        var name = $("#name").val() + " (" + $("#phone_number").val() + ")";
+        var email = $("#email_address").val();
+        var subject = $("#contact_reason").val();
+        var message = $("#message").val();
+        var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message;
+        alert(dataString)
+
+        function isValidEmail(emailAddress) {
+            var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+            return pattern.test(emailAddress);
+        };
+
+        if (isValidEmail(email) && (message.length > 1) && (name.length > 1)) {
+            $.ajax({
+                type: "POST",
+                url: "php/sendmail.php",
+                data: dataString,
+                success: function(result) {
+                    $('.success').fadeIn(1000);
+                    $('.error').fadeOut(500);
+                }
+            });
+        } else {
+            $('.error').fadeIn(1000);
+            $('.success').fadeOut(500);
+        }
+
+        return false;
+    });
+    </script>
 </body>
 
 </html>
