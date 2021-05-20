@@ -11,7 +11,7 @@ if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['subject'])
   }
   
   //
-  mail( "info@prababakesandcakes.in", $_POST['subject'], $_POST['message'], "From:" . $_POST['email'] );
+  mail( "info@prabacakesandbakes.in", $_POST['subject'], $_POST['message'], "From:" . $_POST['email'] );
   echo "success";
  
   //			^

@@ -233,7 +233,6 @@
     ===  CONTACT FORM          ====
     =================================== */
     // $("#contact-form").on('submit', function(e) {
-    //   $("#submit").on('click', function(e) {
     //     e.preventDefault();
     //     var name = $("#name").val() + " (" + $("#phone_number").val() + ")";
     //     var email = $("#email_address").val();
