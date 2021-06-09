@@ -569,17 +569,17 @@
     <section class="payment-section text-center" id="payment">
       <div class="container whitecolor section-padding">
         <div class="row">
-          <div class="col-sm-6 text-left">
+          <div class="col-sm-12 text-center">
             <img src="img/pricing.jpeg" id="price_img" alt="">
           </div>
-          <div class="col-sm-6 text-center">
+          <!-- <div class="col-sm-6 text-center">
             
             <div class="payment_sec">
-            <h1>Payment</h1>
+            <h1>Payment</h1> -->
             <br>
               <!-- Trigger the modal with a button -->
-            <button type="button" class="send-button" data-toggle="modal" data-target="#myModal">Show QR</button>
-          </div>
+            <!-- <button type="button" class="send-button" data-toggle="modal" data-target="#myModal">Show QR</button>
+          </div> -->
           </div>
         </div>
 
@@ -732,28 +732,28 @@
     <section id="wallofcake">
         <section class="wall-of-cake-section" id="wall">
             <div class="container section-padding">
-              <div class="row">
-                <div class="col-xs-12 text-center">
-                  <h2 class="long-title">
-                    <strong> <span>WALL</span> OF
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h2 class="long-title">
+                            <strong> <span>WALL</span> OF
                       <span> CAKE</span>
                     </strong>
-                </h2>
+                        </h2>
+                    </div>
+                    <br>
                 </div>
-              <br>
-              </div>
-              <div class="row">
-                  <div class="col-xs-6 text-center">
-                      <div class="cake-img">
-                          <img src="img/clients/wall.jpeg" alt="" />
-                      </div>
-                  </div>
-                  <div class="col-xs-6 text-center">
-                      <div class="cake-img">
-                          <img src="img/clients/wall2.jpeg" alt="" />
-                      </div>
-                  </div>
-              </div>
+                <div class="row">
+                    <div class="col-xs-6 text-center">
+                        <div class="cake-img">
+                            <img src="img/clients/wall.jpeg" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <div class="cake-img">
+                            <img src="img/clients/wall2.jpeg" alt="" />
+                        </div>
+                    </div>
+                </div>
             </div>
 
             </div>
@@ -801,14 +801,14 @@
 
                 </div> -->
                 <div class="row">
-                  <div class="col-xs-12 text-center">
-                    <h2 class="long-title">
-                      <strong> <span>WALL</span> OF
+                    <div class="col-xs-12 text-center">
+                        <h2 class="long-title">
+                            <strong> <span>WALL</span> OF
                         <span> CAKE</span>
                       </strong>
-                  </h2>
-                  </div>
-                <br>
+                        </h2>
+                    </div>
+                    <br>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 text-center">
@@ -817,7 +817,7 @@
                         </div>
                     </div>
                     <div class="row">
-                      <div class="clo-xs-12"></div>
+                        <div class="clo-xs-12"></div>
                     </div>
                     <div class="col-xs-12 text-center">
                         <div class="cake-img">
@@ -825,7 +825,7 @@
                         </div>
                     </div>
                 </div>
-              </div>
+            </div>
             </div>
         </section>
     </section>
@@ -929,7 +929,7 @@
                     <div class="panel-group wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5" id="accordion" role="tablist" aria-multiselectable="true">
                         <div>
                             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                  <div class="elfsight-app-9c96a09b-052d-4616-b613-4eb552974122"></div>
+                            <div class="elfsight-app-9c96a09b-052d-4616-b613-4eb552974122"></div>
 
                         </div>
 
@@ -1095,40 +1095,39 @@
     <!-- Main Active JS -->
     <script src="js/active.js"></script>
     <script>
+        // $("#submit").on('click', function(e) {alert("hello world")})      
+        $("#submit").on('click', function(e) {
+            e.preventDefault();
+            // alert("hello wolrd")
+            var name = $("#name").val() + " (" + $("#phone_number").val() + ")";
+            var email = $("#email_address").val();
+            var subject = $("#contact_reason").val();
+            var message = $("#message").val();
+            var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message;
+            // alert(dataString)
 
-      // $("#submit").on('click', function(e) {alert("hello world")})      
-      $("#submit").on('click', function(e) {
-        e.preventDefault();
-        // alert("hello wolrd")
-        var name = $("#name").val() + " (" + $("#phone_number").val() + ")";
-        var email = $("#email_address").val();
-        var subject = $("#contact_reason").val();
-        var message = $("#message").val();
-        var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message;
-        // alert(dataString)
+            function isValidEmail(emailAddress) {
+                var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+                return pattern.test(emailAddress);
+            };
 
-        function isValidEmail(emailAddress) {
-            var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
-            return pattern.test(emailAddress);
-        };
+            if (isValidEmail(email) && (message.length > 1) && (name.length > 1)) {
+                $.ajax({
+                    type: "POST",
+                    url: "php/sendmail.php",
+                    data: dataString,
+                    success: function(result) {
+                        $('.success').fadeIn(1000);
+                        $('.error').fadeOut(500);
+                    }
+                });
+            } else {
+                $('.error').fadeIn(1000);
+                $('.success').fadeOut(500);
+            }
 
-        if (isValidEmail(email) && (message.length > 1) && (name.length > 1)) {
-            $.ajax({
-                type: "POST",
-                url: "php/sendmail.php",
-                data: dataString,
-                success: function(result) {
-                    $('.success').fadeIn(1000);
-                    $('.error').fadeOut(500);
-                }
-            });
-        } else {
-            $('.error').fadeIn(1000);
-            $('.success').fadeOut(500);
-        }
-
-        return false;
-    });
+            return false;
+        });
     </script>
 </body>
 
