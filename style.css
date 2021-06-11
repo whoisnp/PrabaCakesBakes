@@ -37,6 +37,11 @@ font-family: 'Mrs Saint Delafield', cursive;
 
 /* Top-bar Area */
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 .top-bar {
     background: #fc7790 none repeat scroll 0 0;
     color: #fff;
@@ -867,7 +872,8 @@ h4.panel-title {
     background: #fc7790;
 }
 
-.single-item img {}
+
+/* .single-item img {} */
 
 .single-item {
     position: relative;
